@@ -7646,6 +7646,28 @@
               }
             }
           },
+          "409": {
+            "description": "The network has no record of the wallet (it may have been archived)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error",
+                    "code"
+                  ]
+                }
+              }
+            }
+          },
           "410": {
             "description": "The code is unknown, used, or has run out",
             "content": {
